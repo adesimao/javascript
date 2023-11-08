@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+    <style>
+        body{
+            background-color: rgb(9, 7, 112);
+            color:rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Passa Porte</h1>
+    <p>Em qual país nasceste?</p>
+    <input type="text" id="a">
+    <input type="button" value="Verificar" onclick="cal()">
+    <div id="sai">
+        
+    </div>
+    <script>
+        var res = document.getElementById("a")
+        function cal() { 
+            
+            var sai = document.getElementById("sai")
+            //sai.innerHTML = `<p>Se és de ${res}, então...</p>`
+            if (res == "Angola") {
+                sai.innerHTML += `Somos compatriotas.`
+            } else {
+                sai.innerHTML += `És estrageiro.`
+            }
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+    <style>
+        body{
+            background-color: rgb(9, 7, 112);
+            color:rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <h1>Velocímetro</h1>
+    <p>Qual é a tua velocidade?</p>
+    velocidade: <input type="number" name="txtvel" id="vel">Km/h
+    <input type="button" value="Verificar" onclick="cal()">
+    <div id="sai">
+        
+    </div>
+    <script>
+        function cal() { 
+            var res = document.getElementById("vel")
+            var sai = document.getElementById("sai")
+            var rest = Number(res.value)
+            sai.innerHTML = `<p>A sua velocidade é de ${rest}Km/h.</p>`
+            if (rest>60) {
+                sai.innerHTML += `Acima da média, multado!`
+            } else {
+                sai.innerHTML += `Use sempre o cinto!`
+            }
+
+        }
+
+    </script>
+</body>
+</html>

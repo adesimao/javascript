@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM2</title>
+    <style>
+        body{
+            background: rgb(73, 226, 226);
+        }
+        div#san{
+            font: normal 20pt arial;
+            background: chartreuse;
+            color: rgb(10, 10, 10);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="san">
+        Interaja...
+    </div>
+   <script>
+       var an = window.document.getElementById(`san`)
+       an.addEventListener(`click`, clicar)
+       an.addEventListener("mouseenter", entrar)
+       an.addEventListener("mouseout", sair)
+
+       function entrar() {
+            an.innerText = "Entrou"
+            an.style.background = "blue"
+       }
+       function clicar() {
+           an.innerText = "Clicou"
+           an.style.background = "green"
+       }
+       function sair() {
+            an.innerText = "Saiu"
+            an.style.background = "red"
+       }
+   </script>
+</body>
+</html>

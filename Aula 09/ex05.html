@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="enpt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgb(92, 176, 228);
+            color: rgb(162, 8, 8);
+            font: normal 14pt lucida;
+        }
+        h1{
+            color: rgb(5, 5, 52);
+        }
+    </style>
+</head>
+<body>
+    <h1>"APRENDENDO SOBRE DOM"</h1>
+    <p>Como funciona, uso e estrutura de <strong>DOM</strong> (Document Object Model) em JavaScript.</p>
+    <p>Cá está o seu resultado:</p>
+    <div id = "wd">Clique em mim!</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName("p")[1]
+        /*window.document.write(``)
+        corpo.style.background = `white`
+        corpo.style.color = `blue`
+        var pid = window.document.getElementById("wd")
+        pid.style.background = "green"
+        //pid.innerText= "WOW"
+        window.document.getElementById("wd").innerText = "AMOR"
+        var asd = document.querySelector("div#wd")
+        asd.style.color = "yellow"*/
+    </script>
+</body>
+</html>
